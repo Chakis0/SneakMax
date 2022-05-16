@@ -1,0 +1,21 @@
+.btn {
+  border-radius: 6px;
+  padding: 22px 47px;
+
+  font: var(--middle-font);
+
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  &--primary {
+    background-color: var(--accent-color);
+    color: var(--light-color);
+
+    &:hover {
+      background-color: var(--accentHover-color);
+    }
+
+    &:active {
+      background-color: var(--accentActive-color);
+    }
+  }
+}
