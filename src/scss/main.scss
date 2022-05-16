@@ -4,13 +4,12 @@
 @import "fonts";
 @import "settings";
 
+// подключения компонентов сайта (btn, tooltip, burger, form и т.д)
+
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/cart";
+@import "./components/hero";
 
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}

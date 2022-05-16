@@ -2,11 +2,27 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
-  --content-width: 1170px;
+  --font-family: "Intro", sans-serif;
+  --content-width: 1180px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
   --light-color: #fff;
+  --purple-color: #484283;
+  --accent-color: #F14F4F;
+  --blackText-color: #444B58;
+  --beige-color: #DBBBA9;
+  --beigeLight-color: #FFF4EE;
+  --gray-color: #B2B5BB;
+
+
+  // Stumbles
+  --grid-gap: 20px;
+  --main-offset: 40px;
+
+  // Fonts
+  --middleHigh-font: 700 30px / 140% var(--font-family);
+  --small-font: 400 14px / 140% var(--font-family);
+
 }
