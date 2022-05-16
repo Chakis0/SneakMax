@@ -1,0 +1,25 @@
+.cataloge {
+  padding: var(--section-offset) 0;
+
+  &__title {
+    margin-bottom: var(--main-offset);
+  }
+
+  &__left {
+    grid-column: 3 span;
+  }
+
+  &__grid {
+    grid-column: 9 span;
+  }
+
+}
+
+.cataloge-list {
+  grid-template-columns: repeat(4, 1fr);
+
+  &__item {
+    grid-column: 4 span;
+  }
+
+}

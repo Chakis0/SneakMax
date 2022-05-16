@@ -31,6 +31,12 @@ a {
   text-decoration: none;
 }
 
+picture {
+  width: 0;
+  height: 0;
+}
+
+
 .site-container {
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
 }
