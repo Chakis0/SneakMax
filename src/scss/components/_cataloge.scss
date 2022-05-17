@@ -7,10 +7,40 @@
 
   &__left {
     grid-column: 3 span;
+    padding: var(--second-offset);
+
+    border-radius: 4px;
+    background-color: var(--beigeLight-color);
   }
 
   &__grid {
     grid-column: 9 span;
+  }
+
+  &__prop {
+    margin-bottom: var(--second-offset);
+  }
+
+  &__prop-checkboxes {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: var(--second-offset);
+    font: var(--middlePrehigh-font);
+
+    color: var(--blackText-color);
+  }
+
+  &__caption {
+    display: block;
+    margin-bottom: var(--small-offset);
+
+    font: var(--middle-font);
+
+    color: var(--blackText-color);
   }
 
 }

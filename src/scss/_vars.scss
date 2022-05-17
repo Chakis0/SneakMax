@@ -14,6 +14,7 @@
   --accentHover-color: #CC4949;
   --accentActive-color: #8C2828;
   --blackText-color: #444B58;
+  --blackTextHover-color: #31343C;
   --beige-color: #DBBBA9;
   --beigeLight-color: #FFF4EE;
   --gray-color: #B2B5BB;
@@ -22,14 +23,18 @@
 
   // Stumbles
   --grid-gap: 20px;
+  --small-offset: 10px;
   --second-offset: 20px;
   --main-offset: 40px;
   --section-offset: 60px;
 
+
   // Fonts
   --middleHigh-font: 700 30px / 140% var(--font-family);
+  --middlePrehigh-font: 400 24px / 24px var(--font-family);
   --middleNormal-font: 600 20px / 140% var(--font-family);
   --middle-font: 600 16px / 140% var(--font-family);
+  --smallHigh-font: 400 16px / 140% var(--font-family);
   --small-font: 400 14px / 140% var(--font-family);
 
 }

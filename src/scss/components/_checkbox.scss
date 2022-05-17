@@ -1,0 +1,26 @@
+.custom-checkbox {
+  @include custom-checkbox;
+
+  &__content {
+    padding-left: 35px;
+    font: var(--smallHigh-font);
+    color: var(--blackText-color);
+
+    &::before {
+      top: -3px;
+      border-color: var(--beige-color);
+      border-radius: 5px;
+      width: 24px;
+      height: 24px;
+    }
+
+    &::after {
+      top: -3px;
+      width: 24px;
+      height: 24px;
+      // background-image: url("../img/check.svg");
+      background-size: 15px 12px;
+    }
+  }
+
+}
