@@ -4,63 +4,69 @@
     <div class="cataloge__content grid">
 
       <div class="cataloge__left">
-        <h3 class="cataloge__subtitle">Подбор по параметрам</h3>
+        <div class="cataloge__filters">
 
-        <div class="cataloge__prop">
-          <strong class="cataloge__caption">Цена, руб</strong>
-          <div class="cataloge-price catalog-prop__inner">
-            <input type="text" class="cataloge-price__input">
-            <input type="text" class="cataloge-price__input">
-            <div class="catalog-price__element"></div>
-          </div>
-        </div> <!-- //.prop-1 -->
+          <h3 class="cataloge__subtitle">Подбор по параметрам</h3>
 
-        <div class="cataloge__prop">
-          <strong class="cataloge__caption">Пол</strong>
+          <div class="cataloge__prop">
+            <strong class="cataloge__caption">Цена, руб</strong>
+            <div class="cataloge-price catalog-prop__inner">
+              <div class="cataloge-price__wrapper">
+                <input type="text" class="cataloge-price__input">
+                <input type="text" class="cataloge-price__input">
+              </div>
+              <div class="catalog-price__element"></div>
+            </div>
+          </div> <!-- //.prop-1 -->
 
-          <div class="catalog-prop__inner cataloge__prop-checkboxes">
-            <label class="custom-checkbox">
-              <input type="checkbox" class="custom-checkbox__field">
-              <span class="custom-checkbox__content">Мужской</span>
-            </label>
-            <label class="custom-checkbox">
-              <input type="checkbox" class="custom-checkbox__field">
-              <span class="custom-checkbox__content">Женский</span>
-            </label>
-          </div>
+          <div class="cataloge__prop">
+            <strong class="cataloge__caption">Пол</strong>
 
-        </div><!-- //.prop-2 -->
+            <div class="catalog-prop__inner cataloge__prop-checkboxes">
+              <label class="custom-checkbox">
+                <input type="checkbox" class="custom-checkbox__field">
+                <span class="custom-checkbox__content">Мужской</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="custom-checkbox__field">
+                <span class="custom-checkbox__content">Женский</span>
+              </label>
+            </div>
 
-        <div class="cataloge__prop">
-          <strong class="cataloge__caption">Размер</strong>
+          </div><!-- //.prop-2 -->
 
-          <div class="cataloge-price catalog-prop__inner">
-            <table class="sizes-table">
-              <caption>Таблица размеров</caption>
-              <tbody>
-                <tr>
-                  <td>35</td>
-                  <td>36</td>
-                  <td>37</td>
-                </tr>
-                <tr>
-                  <td>38</td>
-                  <td>39</td>
-                  <td>40</td>
-                </tr>
-                <tr>
-                  <td>41</td>
-                  <td>42</td>
-                  <td>43</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <div class="cataloge__prop">
+            <strong class="cataloge__caption">Размер</strong>
 
-        </div> <!-- //.prop-3 -->
+            <div class="cataloge-price catalog-prop__inner">
+              <table class="sizes-table">
+                <caption>Таблица размеров</caption>
+                <tbody>
+                  <tr>
+                    <td>35</td>
+                    <td>36</td>
+                    <td>37</td>
+                  </tr>
+                  <tr>
+                    <td>38</td>
+                    <td>39</td>
+                    <td>40</td>
+                  </tr>
+                  <tr>
+                    <td>41</td>
+                    <td>42</td>
+                    <td>43</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
-        <button class="btn-reset btn btn--secondary">Применить</button>
-        <button class="btn-reset btn btn__cataloge">Сбросить</button>
+          </div> <!-- //.prop-3 -->
+
+          <button class="btn-reset btn btn--secondary">Применить</button>
+          <button class="btn-reset btn btn__cataloge">Сбросить</button>
+
+        </div>
 
       </div><!-- //.cataloge-left -->
 
