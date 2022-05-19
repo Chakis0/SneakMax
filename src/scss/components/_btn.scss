@@ -18,4 +18,44 @@
       background-color: var(--accentActive-color);
     }
   }
+
+  &--secondary {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 20px 40px;
+
+    background-color: var(--blackText-color);
+    color: var(--light-color);
+
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: var(--blackTextHover-color);
+    }
+
+    &:active {
+      background-color: var(--blackTextActive-color);
+    }
+  }
+
+  &__cataloge {
+    width: 100%;
+    padding: 17px 40px;
+
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+
+    &:hover {
+      background-color: var(--blackText-color);
+      color: var(--light-color);
+
+    }
+
+    &:active {
+      background-color: var(--blackTextHover-color);
+    }
+  }
+
+  &__product {
+    margin-top: var(--main-offset);
+  }
 }
