@@ -58,4 +58,22 @@
   &__product {
     margin-top: var(--main-offset);
   }
+
+  &--thirdly {
+    padding: 14px 45px;
+
+    border: 1px solid var(--blackText-color);
+
+    color: var(--blackText-color);
+    background-color: transparent;
+
+
+    transition: color 0.2s ease-in-out, background-color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--light-color);
+      background-color: var(--blackText-color);
+    }
+  }
+
 }
