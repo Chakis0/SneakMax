@@ -1,0 +1,28 @@
+.input {
+  border: none;
+  border-radius: 6px;
+
+  padding: 0 var(--second-offset);
+  width: 100%;
+  height: 60px;
+
+  font: var(--smallHigh-font);
+  color: var(--blackText-color);
+  background-color: var(--light-color);
+
+  &::placeholder {
+    color: var(--gray-color);
+  }
+
+}
+
+.form-label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.js-validate-error-label {
+  order: -1;
+}
