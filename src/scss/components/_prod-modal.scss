@@ -14,6 +14,11 @@
   width: calc(50% - (var(--second-offset) / 2));
 
   &__container {
+    overflow: hidden;
+    margin-bottom: var(--second-offset);
+    width: 100%;
+    font-size: 0;
+
     img {
       width: 100%;
       max-height: 460px;
@@ -23,5 +28,145 @@
 }
 
 .modal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding-right: var(--section-offset);
   width: calc(50% - (var(--second-offset) / 2));
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--main-offset);
+
+    font: var(--smallHigh-font);
+    line-height: 16px;
+    color: var(--gray-color);
+  }
+
+  &__vendor {
+    margin-right: var(--main-offset);
+  }
+
+  &__quantity {
+    span {
+      color: var(--blackText-color);
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: var(--second-offset);
+
+    font: var(--middlePrehigh-font);
+    line-height: 140%;
+    color: var(--blackText-color);
+  }
+
+  &__rate {
+    margin-bottom: var(--second-offset);
+  }
+
+  &__subtitle {
+    margin-bottom: var(--second-offset);
+
+    font: var(--smallHigh-font);
+    line-height: 16px;
+    color: var(--blackText-color);
+  }
+
+  &__sizes {
+    margin-bottom: var(--second-offset);
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+  }
+
+  &__current-price {
+    margin-right: 32px;
+
+    font: var(--middleHigh-font);
+    line-height: 30px;
+    color: var(--blackText-color);
+  }
+
+  &__old-price {
+    font: var(--smallHigh-font);
+    line-height: 16px;
+    color: var(--gray-color);
+  }
+
+  &__order {
+    margin-top: auto;
+    width: 100%;
+  }
+}
+
+.modal-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: var(--second-offset);
+    }
+  }
+
+  &__btn {
+    border: 1px solid var(--gray-color);
+    border-radius: 4px;
+    padding: 6px 27px;
+
+    font: var(--small-font);
+    color: var(--blackText-color);
+  }
+}
+
+.modal-preview {
+  display: grid;
+  grid-template-columns: repeat(6, 70px);
+  gap: var(--second-offset);
+
+  &__item {
+    border-radius: 6px;
+    height: 75px;
+    cursor: pointer;
+
+    transition: opacity 0.3s ease-in-out;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.modal-note {
+  margin-top: var(--second-offset);
+
+  &__item {
+    padding-left: 26px;
+
+    font: var(--small-font);
+    color: var(--gray-color);
+
+    background-image: url("../img/check-list.svg");
+    background-position: left center;
+    block-size: 15px 12px;
+    background-repeat: no-repeat;
+
+    &:not(:last-child) {
+      margin-bottom: var(--small-offset);
+    }
+  }
 }

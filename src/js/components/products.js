@@ -1,6 +1,6 @@
 import _vars from '../_vars';
 import GraphModal from 'graph-modal';
-import Swiper from 'swiper';
+// import Swiper from 'swiper';
 
 const catalogeList = document.querySelector('.cataloge__list');
 const catalogeMore = document.querySelector('.btn__product');
@@ -119,6 +119,6 @@ if (catalogeList) {
 }
 
 
-const prodSlider = new Swiper('.modal-slider__container', {
-  slidesPerView: 1
-});
+// const prodSlider = new Swiper('.modal-slider__container', {
+//   slidesPerView: 1
+// });
