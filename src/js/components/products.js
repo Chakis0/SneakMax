@@ -1,7 +1,11 @@
 import _vars from '../_vars';
+import GraphModal from 'graph-modal';
+import Swiper from 'swiper';
 
 const catalogeList = document.querySelector('.cataloge__list');
 const catalogeMore = document.querySelector('.btn__product');
+const prodModal = document.querySelector('[data-graph-target="prod-modal"] .modal-content');
+
 let prodQuantity = 5;
 let dataLength = null;
 
@@ -40,7 +44,7 @@ if (catalogeList) {
                 </picture>
 
                 <div class="product__btns">
-                  <button class="btn-reset product__btn" data-id="${item.id}" aria-label="Показать информацию о товаре">
+                  <button class="btn-reset product__btn" data-graph-path="prod-modal" data-id="${item.id}" aria-label="Показать информацию о товаре">
                     <svg>
                       <use xlink:href="img/sprite.svg#show"></use>
                     </svg>
@@ -61,8 +65,60 @@ if (catalogeList) {
             `;
           }
         }
+      })
+      .then(() => {
+        const productTitle = document.querySelectorAll('.product__title');
+        productTitle.forEach(el => {
+          $clamp(el, { clamp: '22px' });
+        });
+
+
+        const modal = new GraphModal({
+          isOpen: (modal) => {
+            const openBtnId = modal.previousActiveElement.dataset.id;
+
+            loadModalData(openBtnId);
+          },
+        });
+
+
       });
   };
 
   loadProducts(prodQuantity);
+
+  const loadModalData = (id = 1) => {
+    fetch('../data/data.json')
+      .then((reponse) => {
+        return reponse.json();
+      })
+
+      .then((data) => {
+        // prodModal.innerHTML = '';
+
+        for (let dataItem of data) {
+          if (dataItem.id == id) {
+            console.log(dataItem);
+          }
+        }
+      });
+  };
+
+  catalogeMore.addEventListener('click', (e) => {
+    prodQuantity = prodQuantity + 3;
+
+    loadProducts(prodQuantity);
+
+    if (prodQuantity >= dataLength) {
+      catalogeMore.style.display = 'none';
+    }
+    else {
+      catalogeMore.style.display = 'block';
+    }
+  });
 }
+
+
+const prodSlider = new Swiper('.modal-slider__container', {
+  slidesPerView: 1
+});
