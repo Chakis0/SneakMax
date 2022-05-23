@@ -1,0 +1,131 @@
+.cart-modal {
+  border-radius: 6px;
+  padding: var(--main-offset);
+  width: 580px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--main-offset);
+  }
+
+  &__title {
+    margin: 0;
+
+    font: var(--middleNormal-font);
+    line-height: 20px;
+    color: var(--blackText-color);
+  }
+
+  &__order-number {
+    font: var(--small-font);
+    line-height: 14px;
+    color: var(--gray-color);
+  }
+
+  &__input {
+    color: var(--gray-color);
+    background-color: #f6f6f6;
+
+    &:not(:last-child) {
+      margin-bottom: var(--small-offset);
+    }
+  }
+
+}
+
+.cart-modal-order {
+  margin-bottom: var(--main-offset);
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 30px;
+
+  &__top {
+    font: var(--smallHigh-font);
+    line-height: 16px;
+    color: var(--gray-color);
+
+    span {
+      font-weight: 600;
+      color: var(--blackText-color);
+    }
+  }
+
+  &__quantity {
+    margin-bottom: var(--second-offset);
+  }
+  &__summ {
+    margin-bottom: var(--second-offset);
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__show {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: var(--second-offset);
+    color: var(--blackText-color);
+    svg {
+      margin-left: 5px;
+      width: 10px;
+      height: 10px;
+      fill: currentColor;
+      object-fit: cover;
+    }
+  }
+}
+
+.cart-modal-product {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__image {
+    flex-shrink: 0;
+    margin-right: var(--small-offset);
+    width: 80px;
+    height: 45px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  &__text {
+    margin-right: auto;
+    max-width: 290px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: var(--small-offset);
+    font: var(--small-font);
+    line-height: 20px;
+  }
+
+  &__price {
+    font: var(--middleNormal-font);
+    color: #4d4d4d;
+  }
+
+  &__delete {
+    font: var(--small-font);
+    line-height: 14px;
+    color: var(--gray-color);
+  }
+}
+
